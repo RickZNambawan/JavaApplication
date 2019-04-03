@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaProject.LoginForm">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="309.0" layoutX="90.0" layoutY="40.0" stroke="BLACK" strokeLineCap="BUTT" strokeLineJoin="ROUND" width="427.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Label layoutX="190.0" layoutY="132.0" text="Username" textFill="#ff2424" />
+      <Label layoutX="192.0" layoutY="172.0" text="Password" textFill="#ff2424" />
+      <TextField fx:id="txtUserName" layoutX="254.0" layoutY="128.0" promptText="username" />
+      <PasswordField fx:id="txtPassword" layoutX="254.0" layoutY="168.0" promptText="password" />
+      <Button fx:id="btnSubmit" layoutX="274.0" layoutY="224.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+      <Label layoutX="235.0" layoutY="77.0" text="Log In Form">
+         <font>
+            <Font name="Bernard MT Condensed" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="267.0" text="Don't have an account yet?" />
+      <Button fx:id="btnCreateAccount" layoutX="225.0" layoutY="299.0" mnemonicParsing="false" onAction="#signUpButton" text="Create an Account for Free" />
+      <Label fx:id="lblMessage" layoutX="200.0" layoutY="200.0" prefHeight="17.0" prefWidth="257.0" textFill="#b54f4f">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
